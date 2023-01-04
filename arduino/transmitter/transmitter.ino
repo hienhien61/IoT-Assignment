@@ -2,7 +2,7 @@
 #include <RF24.h>
 #include <DHT.h>
  
-const uint64_t pipe = 0xE8E8F0F0E1LL;
+const uint64_t pipe = 0xE8E8F0F0E2LL;
 RF24 radio(8,9); 
 const int DHTPIN = 2;      
 const int DHTTYPE = DHT11;

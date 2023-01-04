@@ -24,13 +24,13 @@ void loop(){
     radio.read(temperature, sizeof(temperature));
     Serial.print("!TEMP1:");
     Serial.print(temperature[0]);
-    Serial.println("#");
+    Serial.print("#");
     Serial.print("!HUMI1:");
     Serial.print(temperature[1]);
-    Serial.println("#");
+    Serial.print("#");
     Serial.print("!SOLAR1:");
     Serial.print(temperature[2]);
-    Serial.println("#");
+    Serial.print("#");
     Serial.println();
 //  }
   radio.stopListening();
@@ -41,13 +41,13 @@ void loop(){
     radio.read(temperature, sizeof(temperature));
     Serial.print("!TEMP2:");
     Serial.print(temperature[0]);
-    Serial.println("#");
+    Serial.print("#");
     Serial.print("!HUMI2:");
     Serial.print(temperature[1]);
-    Serial.println("#");
+    Serial.print("#");
     Serial.print("!SOLAR2:");
     Serial.print(temperature[2]);
-    Serial.println("#");
+    Serial.print("#");
     Serial.println();
 //  }
   radio.stopListening();
