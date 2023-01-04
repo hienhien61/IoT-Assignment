@@ -66,8 +66,9 @@ def publish(client):
         #     # "humi": random.randint(60, 100),
         #     # "lux": random.randint(800, 1500) / 10.0,
         # }
-        msg = f"{json.dumps(data)}"
-        result = client.publish(topic, msg)
+        for x in data:
+          msg = f"{json.dumps(x)}"
+          result = client.publish(topic, msg)
         # result: [0, 1]
         status = result[0]
         if status == 0:
